@@ -1,0 +1,24 @@
+{
+  "name": "full-stack-3d-cardiac-ml-multimodal",
+  "version": "1.0.0",
+  "private": true,
+  "description": "CardioTwin 3D: Multimodal AI Cardiovascular Risk & Hemodynamic Digital Twin",
+  "scripts": {
+    "build": "cd frontend && npm install && npm run build",
+    "dev": "cd frontend && npm run dev",
+    "start": "cd frontend && npm run preview"
+  },
+  "keywords": [
+    "cardiovascular",
+    "machine-learning",
+    "threejs",
+    "react-three-fiber",
+    "digital-twin",
+    "hemodynamics",
+    "shap",
+    "lightgbm",
+    "fastapi"
+  ],
+  "author": "Priyanshu Sarjan",
+  "license": "MIT"
+}

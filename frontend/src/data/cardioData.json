@@ -1,0 +1,1447 @@
+{
+  "metrics": {
+    "CAD": {
+      "accuracy": 0.8446448087431694,
+      "precision": 0.8676353572046359,
+      "recall": 0.9257928118393235,
+      "f1_score": 0.894993894993895,
+      "roc_auc": 0.9035118628141884,
+      "std_auc": 0.044651777283029846
+    },
+    "LAD": {
+      "accuracy": 0.7887431693989071,
+      "precision": 0.8003386845492109,
+      "recall": 0.8531746031746031,
+      "f1_score": 0.8253332664291568,
+      "roc_auc": 0.8366959706959707,
+      "std_auc": 0.04895424924472703
+    },
+    "LCX": {
+      "accuracy": 0.6996174863387978,
+      "precision": 0.6451309433002796,
+      "recall": 0.5289855072463767,
+      "f1_score": 0.580278504276525,
+      "roc_auc": 0.7330586020803412,
+      "std_auc": 0.0534629378655508
+    },
+    "RCA": {
+      "accuracy": 0.6863934426229508,
+      "precision": 0.6179491978609626,
+      "recall": 0.4826086956521739,
+      "f1_score": 0.5318401206636502,
+      "roc_auc": 0.7101060390534074,
+      "std_auc": 0.04934720427110382
+    }
+  },
+  "presets": [
+    {
+      "id": "patient-1-tvd",
+      "name": "Patient Alpha (Triple Vessel Disease)",
+      "demographics": "64yo Male, Smoker, HTN, Severe multi-segment angina",
+      "clinical_archetype": "Triple Vessel Disease (High Risk)",
+      "features": {
+        "Age": 50.0,
+        "Weight": 75.0,
+        "Length": 175.0,
+        "Sex": 1.0,
+        "BMI": 24.489795918367346,
+        "DM": 0.0,
+        "HTN": 0.0,
+        "Current Smoker": 1.0,
+        "EX-Smoker": 0.0,
+        "FH": 0.0,
+        "Obesity": 0.0,
+        "CRF": 0.0,
+        "CVA": 0.0,
+        "Airway disease": 0.0,
+        "Thyroid Disease": 0.0,
+        "CHF": 0.0,
+        "DLP": 0.0,
+        "BP": 118.0,
+        "PR": 70.0,
+        "Edema": 0.0,
+        "Weak Peripheral Pulse": 0.0,
+        "Lung rales": 0.0,
+        "Systolic Murmur": 0.0,
+        "Diastolic Murmur": 0.0,
+        "Typical Chest Pain": 1.0,
+        "Dyspnea": 0.0,
+        "Function Class": 3.0,
+        "Atypical": 0.0,
+        "Nonanginal": 0.0,
+        "Exertional CP": 0.0,
+        "LowTH Ang": 0.0,
+        "Q Wave": 0.0,
+        "St Elevation": 0.0,
+        "St Depression": 0.0,
+        "Tinversion": 0.0,
+        "LVH": 0.0,
+        "Poor R Progression": 0.0,
+        "BBB": 0.0,
+        "FBS": 86.0,
+        "CR": 1.0,
+        "TG": 139.0,
+        "LDL": 119.0,
+        "HDL": 34.0,
+        "BUN": 13.0,
+        "ESR": 18.0,
+        "HB": 15.6,
+        "K": 4.2,
+        "Na": 141.0,
+        "WBC": 7300.0,
+        "Lymph": 26.0,
+        "Neut": 66.0,
+        "PLT": 194.0,
+        "EF-TTE": 50.0,
+        "Region RWMA": 0.0,
+        "VHD": 0.0
+      },
+      "raw_record": {
+        "Age": 50,
+        "Weight": 75,
+        "Length": 175,
+        "Sex": "Male",
+        "BMI": 24.489795918367346,
+        "DM": 0,
+        "HTN": 0,
+        "Current Smoker": 1,
+        "EX-Smoker": 0,
+        "FH": 0,
+        "Obesity": "N",
+        "CRF": "N",
+        "CVA": "N",
+        "Airway disease": "N",
+        "Thyroid Disease": "N",
+        "CHF": "N",
+        "DLP": "N",
+        "BP": 118,
+        "PR": 70,
+        "Edema": 0,
+        "Weak Peripheral Pulse": "N",
+        "Lung rales": "N",
+        "Systolic Murmur": "N",
+        "Diastolic Murmur": "N",
+        "Typical Chest Pain": 1,
+        "Dyspnea": "N",
+        "Function Class": 3,
+        "Atypical": "N",
+        "Nonanginal": "N",
+        "Exertional CP": "N",
+        "LowTH Ang": "N",
+        "Q Wave": 0,
+        "St Elevation": 0,
+        "St Depression": 0,
+        "Tinversion": 0,
+        "LVH": "N",
+        "Poor R Progression": "N",
+        "BBB": "N",
+        "FBS": 86,
+        "CR": 1.0,
+        "TG": 139,
+        "LDL": 119,
+        "HDL": 34.0,
+        "BUN": 13,
+        "ESR": 18,
+        "HB": 15.6,
+        "K": 4.2,
+        "Na": 141,
+        "WBC": 7300,
+        "Lymph": 26,
+        "Neut": 66,
+        "PLT": 194,
+        "EF-TTE": 50,
+        "Region RWMA": 0,
+        "VHD": "N",
+        "LAD": "Stenotic",
+        "LCX": "Stenotic",
+        "RCA": "Stenotic",
+        "Cath": "CAD"
+      },
+      "fhir_summary": {
+        "resourceType": "Patient",
+        "id": "CAD-EHR-001",
+        "condition": "Severe Multivessel Coronary Artery Disease",
+        "nyha_class": 3,
+        "ejection_fraction": 50.0,
+        "rwma_region": 0
+      }
+    },
+    {
+      "id": "patient-2-lad-isolated",
+      "name": "Patient Beta (Isolated LAD / 'Widowmaker' Risk)",
+      "demographics": "58yo Male, Anterior STEMI pattern, Anterior RWMA",
+      "clinical_archetype": "Isolated Proximal LAD Stenosis",
+      "features": {
+        "Age": 54.0,
+        "Weight": 54.0,
+        "Length": 164.0,
+        "Sex": 1.0,
+        "BMI": 20.077334919690664,
+        "DM": 0.0,
+        "HTN": 0.0,
+        "Current Smoker": 1.0,
+        "EX-Smoker": 0.0,
+        "FH": 0.0,
+        "Obesity": 0.0,
+        "CRF": 0.0,
+        "CVA": 0.0,
+        "Airway disease": 0.0,
+        "Thyroid Disease": 0.0,
+        "CHF": 0.0,
+        "DLP": 0.0,
+        "BP": 100.0,
+        "PR": 100.0,
+        "Edema": 0.0,
+        "Weak Peripheral Pulse": 0.0,
+        "Lung rales": 0.0,
+        "Systolic Murmur": 0.0,
+        "Diastolic Murmur": 0.0,
+        "Typical Chest Pain": 1.0,
+        "Dyspnea": 0.0,
+        "Function Class": 0.0,
+        "Atypical": 0.0,
+        "Nonanginal": 0.0,
+        "Exertional CP": 0.0,
+        "LowTH Ang": 0.0,
+        "Q Wave": 0.0,
+        "St Elevation": 0.0,
+        "St Depression": 0.0,
+        "Tinversion": 0.0,
+        "LVH": 0.0,
+        "Poor R Progression": 0.0,
+        "BBB": 0.0,
+        "FBS": 85.0,
+        "CR": 1.0,
+        "TG": 103.0,
+        "LDL": 70.0,
+        "HDL": 45.0,
+        "BUN": 17.0,
+        "ESR": 10.0,
+        "HB": 13.5,
+        "K": 4.7,
+        "Na": 139.0,
+        "WBC": 7400.0,
+        "Lymph": 38.0,
+        "Neut": 60.0,
+        "PLT": 230.0,
+        "EF-TTE": 40.0,
+        "Region RWMA": 2.0,
+        "VHD": 1.0
+      },
+      "raw_record": {
+        "Age": 54,
+        "Weight": 54,
+        "Length": 164,
+        "Sex": "Male",
+        "BMI": 20.077334919690664,
+        "DM": 0,
+        "HTN": 0,
+        "Current Smoker": 1,
+        "EX-Smoker": 0,
+        "FH": 0,
+        "Obesity": "N",
+        "CRF": "N",
+        "CVA": "N",
+        "Airway disease": "N",
+        "Thyroid Disease": "N",
+        "CHF": "N",
+        "DLP": "N",
+        "BP": 100,
+        "PR": 100,
+        "Edema": 0,
+        "Weak Peripheral Pulse": "N",
+        "Lung rales": "N",
+        "Systolic Murmur": "N",
+        "Diastolic Murmur": "N",
+        "Typical Chest Pain": 1,
+        "Dyspnea": "N",
+        "Function Class": 0,
+        "Atypical": "N",
+        "Nonanginal": "N",
+        "Exertional CP": "N",
+        "LowTH Ang": "N",
+        "Q Wave": 0,
+        "St Elevation": 0,
+        "St Depression": 0,
+        "Tinversion": 0,
+        "LVH": "N",
+        "Poor R Progression": "N",
+        "BBB": "N",
+        "FBS": 85,
+        "CR": 1.0,
+        "TG": 103,
+        "LDL": 70,
+        "HDL": 45.0,
+        "BUN": 17,
+        "ESR": 10,
+        "HB": 13.5,
+        "K": 4.7,
+        "Na": 139,
+        "WBC": 7400,
+        "Lymph": 38,
+        "Neut": 60,
+        "PLT": 230,
+        "EF-TTE": 40,
+        "Region RWMA": 2,
+        "VHD": "mild",
+        "LAD": "Stenotic",
+        "LCX": "Normal",
+        "RCA": "Normal",
+        "Cath": "CAD"
+      },
+      "fhir_summary": {
+        "resourceType": "Patient",
+        "id": "CAD-EHR-002",
+        "condition": "Critical Anterior Wall Ischemia / LAD Lesion",
+        "nyha_class": 0,
+        "ejection_fraction": 40.0,
+        "rwma_region": 2
+      }
+    },
+    {
+      "id": "patient-3-rca-isolated",
+      "name": "Patient Gamma (Isolated RCA Inferior Ischemia)",
+      "demographics": "61yo Female, Inferior lead changes, Dyspnea",
+      "clinical_archetype": "Isolated RCA Stenosis / Inferior Hypokinesia",
+      "features": {
+        "Age": 50.0,
+        "Weight": 81.0,
+        "Length": 165.0,
+        "Sex": 1.0,
+        "BMI": 29.752066115702483,
+        "DM": 0.0,
+        "HTN": 1.0,
+        "Current Smoker": 0.0,
+        "EX-Smoker": 0.0,
+        "FH": 0.0,
+        "Obesity": 0.0,
+        "CRF": 0.0,
+        "CVA": 0.0,
+        "Airway disease": 0.0,
+        "Thyroid Disease": 0.0,
+        "CHF": 0.0,
+        "DLP": 0.0,
+        "BP": 110.0,
+        "PR": 80.0,
+        "Edema": 0.0,
+        "Weak Peripheral Pulse": 0.0,
+        "Lung rales": 0.0,
+        "Systolic Murmur": 0.0,
+        "Diastolic Murmur": 0.0,
+        "Typical Chest Pain": 0.0,
+        "Dyspnea": 0.0,
+        "Function Class": 0.0,
+        "Atypical": 0.0,
+        "Nonanginal": 0.0,
+        "Exertional CP": 0.0,
+        "LowTH Ang": 0.0,
+        "Q Wave": 0.0,
+        "St Elevation": 0.0,
+        "St Depression": 0.0,
+        "Tinversion": 0.0,
+        "LVH": 0.0,
+        "Poor R Progression": 0.0,
+        "BBB": 0.0,
+        "FBS": 71.0,
+        "CR": 0.7,
+        "TG": 340.0,
+        "LDL": 163.0,
+        "HDL": 46.0,
+        "BUN": 10.0,
+        "ESR": 8.0,
+        "HB": 14.9,
+        "K": 4.5,
+        "Na": 144.0,
+        "WBC": 6900.0,
+        "Lymph": 22.0,
+        "Neut": 70.0,
+        "PLT": 245.0,
+        "EF-TTE": 50.0,
+        "Region RWMA": 0.0,
+        "VHD": 0.0
+      },
+      "raw_record": {
+        "Age": 50,
+        "Weight": 81,
+        "Length": 165,
+        "Sex": "Male",
+        "BMI": 29.752066115702483,
+        "DM": 0,
+        "HTN": 1,
+        "Current Smoker": 0,
+        "EX-Smoker": 0,
+        "FH": 0,
+        "Obesity": "Y",
+        "CRF": "N",
+        "CVA": "N",
+        "Airway disease": "N",
+        "Thyroid Disease": "N",
+        "CHF": "N",
+        "DLP": "Y",
+        "BP": 110,
+        "PR": 80,
+        "Edema": 0,
+        "Weak Peripheral Pulse": "N",
+        "Lung rales": "N",
+        "Systolic Murmur": "N",
+        "Diastolic Murmur": "N",
+        "Typical Chest Pain": 0,
+        "Dyspnea": "N",
+        "Function Class": 0,
+        "Atypical": "Y",
+        "Nonanginal": "N",
+        "Exertional CP": "N",
+        "LowTH Ang": "N",
+        "Q Wave": 0,
+        "St Elevation": 0,
+        "St Depression": 0,
+        "Tinversion": 0,
+        "LVH": "N",
+        "Poor R Progression": "N",
+        "BBB": "N",
+        "FBS": 71,
+        "CR": 0.7,
+        "TG": 340,
+        "LDL": 163,
+        "HDL": 46.0,
+        "BUN": 10,
+        "ESR": 8,
+        "HB": 14.9,
+        "K": 4.5,
+        "Na": 144,
+        "WBC": 6900,
+        "Lymph": 22,
+        "Neut": 70,
+        "PLT": 245,
+        "EF-TTE": 50,
+        "Region RWMA": 0,
+        "VHD": "N",
+        "LAD": "Normal",
+        "LCX": "Normal",
+        "RCA": "Stenotic",
+        "Cath": "CAD"
+      },
+      "fhir_summary": {
+        "resourceType": "Patient",
+        "id": "CAD-EHR-003",
+        "condition": "Right Coronary Artery Stenosis",
+        "nyha_class": 0,
+        "ejection_fraction": 50.0,
+        "rwma_region": 0
+      }
+    },
+    {
+      "id": "patient-4-normal",
+      "name": "Patient Delta (Healthy Normal Control)",
+      "demographics": "46yo Female, Non-anginal chest pain, Normal ECG & Echo",
+      "clinical_archetype": "Non-Ischemic Normal Control",
+      "features": {
+        "Age": 66.0,
+        "Weight": 67.0,
+        "Length": 158.0,
+        "Sex": 0.0,
+        "BMI": 26.83864765261977,
+        "DM": 0.0,
+        "HTN": 1.0,
+        "Current Smoker": 0.0,
+        "EX-Smoker": 0.0,
+        "FH": 0.0,
+        "Obesity": 0.0,
+        "CRF": 0.0,
+        "CVA": 0.0,
+        "Airway disease": 0.0,
+        "Thyroid Disease": 0.0,
+        "CHF": 0.0,
+        "DLP": 0.0,
+        "BP": 100.0,
+        "PR": 80.0,
+        "Edema": 0.0,
+        "Weak Peripheral Pulse": 0.0,
+        "Lung rales": 0.0,
+        "Systolic Murmur": 0.0,
+        "Diastolic Murmur": 0.0,
+        "Typical Chest Pain": 0.0,
+        "Dyspnea": 0.0,
+        "Function Class": 3.0,
+        "Atypical": 0.0,
+        "Nonanginal": 0.0,
+        "Exertional CP": 0.0,
+        "LowTH Ang": 0.0,
+        "Q Wave": 0.0,
+        "St Elevation": 0.0,
+        "St Depression": 1.0,
+        "Tinversion": 0.0,
+        "LVH": 0.0,
+        "Poor R Progression": 0.0,
+        "BBB": 0.0,
+        "FBS": 78.0,
+        "CR": 1.2,
+        "TG": 63.0,
+        "LDL": 55.0,
+        "HDL": 27.0,
+        "BUN": 30.0,
+        "ESR": 76.0,
+        "HB": 12.1,
+        "K": 4.4,
+        "Na": 142.0,
+        "WBC": 13000.0,
+        "Lymph": 18.0,
+        "Neut": 72.0,
+        "PLT": 742.0,
+        "EF-TTE": 55.0,
+        "Region RWMA": 0.0,
+        "VHD": 3.0
+      },
+      "raw_record": {
+        "Age": 66,
+        "Weight": 67,
+        "Length": 158,
+        "Sex": "Fmale",
+        "BMI": 26.83864765261977,
+        "DM": 0,
+        "HTN": 1,
+        "Current Smoker": 0,
+        "EX-Smoker": 0,
+        "FH": 0,
+        "Obesity": "Y",
+        "CRF": "N",
+        "CVA": "N",
+        "Airway disease": "N",
+        "Thyroid Disease": "N",
+        "CHF": "N",
+        "DLP": "N",
+        "BP": 100,
+        "PR": 80,
+        "Edema": 0,
+        "Weak Peripheral Pulse": "N",
+        "Lung rales": "N",
+        "Systolic Murmur": "N",
+        "Diastolic Murmur": "Y",
+        "Typical Chest Pain": 0,
+        "Dyspnea": "Y",
+        "Function Class": 3,
+        "Atypical": "N",
+        "Nonanginal": "Y",
+        "Exertional CP": "N",
+        "LowTH Ang": "N",
+        "Q Wave": 0,
+        "St Elevation": 0,
+        "St Depression": 1,
+        "Tinversion": 0,
+        "LVH": "N",
+        "Poor R Progression": "N",
+        "BBB": "N",
+        "FBS": 78,
+        "CR": 1.2,
+        "TG": 63,
+        "LDL": 55,
+        "HDL": 27.0,
+        "BUN": 30,
+        "ESR": 76,
+        "HB": 12.1,
+        "K": 4.4,
+        "Na": 142,
+        "WBC": 13000,
+        "Lymph": 18,
+        "Neut": 72,
+        "PLT": 742,
+        "EF-TTE": 55,
+        "Region RWMA": 0,
+        "VHD": "Severe",
+        "LAD": "Normal",
+        "LCX": "Normal",
+        "RCA": "Normal",
+        "Cath": "Normal"
+      },
+      "fhir_summary": {
+        "resourceType": "Patient",
+        "id": "CAD-EHR-004",
+        "condition": "Normal Coronary Angiogram & Normal Cardiac Wall Motion",
+        "nyha_class": 3,
+        "ejection_fraction": 55.0,
+        "rwma_region": 0
+      }
+    },
+    {
+      "id": "patient-5-borderline",
+      "name": "Patient Epsilon (Borderline / High Uncertainty)",
+      "demographics": "55yo Male, Diabetic microvascular risk, Equivocal stress test",
+      "clinical_archetype": "Borderline Diagnostic Ambiguity",
+      "features": {
+        "Age": 67.0,
+        "Weight": 63.0,
+        "Length": 154.0,
+        "Sex": 0.0,
+        "BMI": 26.564344746162927,
+        "DM": 1.0,
+        "HTN": 1.0,
+        "Current Smoker": 0.0,
+        "EX-Smoker": 0.0,
+        "FH": 0.0,
+        "Obesity": 0.0,
+        "CRF": 0.0,
+        "CVA": 0.0,
+        "Airway disease": 0.0,
+        "Thyroid Disease": 0.0,
+        "CHF": 0.0,
+        "DLP": 0.0,
+        "BP": 150.0,
+        "PR": 74.0,
+        "Edema": 0.0,
+        "Weak Peripheral Pulse": 0.0,
+        "Lung rales": 0.0,
+        "Systolic Murmur": 0.0,
+        "Diastolic Murmur": 0.0,
+        "Typical Chest Pain": 0.0,
+        "Dyspnea": 0.0,
+        "Function Class": 2.0,
+        "Atypical": 0.0,
+        "Nonanginal": 0.0,
+        "Exertional CP": 0.0,
+        "LowTH Ang": 0.0,
+        "Q Wave": 0.0,
+        "St Elevation": 0.0,
+        "St Depression": 0.0,
+        "Tinversion": 1.0,
+        "LVH": 0.0,
+        "Poor R Progression": 0.0,
+        "BBB": 0.0,
+        "FBS": 183.0,
+        "CR": 1.1,
+        "TG": 358.0,
+        "LDL": 118.0,
+        "HDL": 32.0,
+        "BUN": 20.0,
+        "ESR": 18.0,
+        "HB": 14.3,
+        "K": 4.5,
+        "Na": 139.0,
+        "WBC": 8100.0,
+        "Lymph": 31.0,
+        "Neut": 65.0,
+        "PLT": 254.0,
+        "EF-TTE": 55.0,
+        "Region RWMA": 2.0,
+        "VHD": 1.0
+      },
+      "raw_record": {
+        "Age": 67,
+        "Weight": 63,
+        "Length": 154,
+        "Sex": "Fmale",
+        "BMI": 26.564344746162927,
+        "DM": 1,
+        "HTN": 1,
+        "Current Smoker": 0,
+        "EX-Smoker": 0,
+        "FH": 0,
+        "Obesity": "Y",
+        "CRF": "N",
+        "CVA": "N",
+        "Airway disease": "N",
+        "Thyroid Disease": "N",
+        "CHF": "N",
+        "DLP": "Y",
+        "BP": 150,
+        "PR": 74,
+        "Edema": 0,
+        "Weak Peripheral Pulse": "N",
+        "Lung rales": "N",
+        "Systolic Murmur": "N",
+        "Diastolic Murmur": "N",
+        "Typical Chest Pain": 0,
+        "Dyspnea": "Y",
+        "Function Class": 2,
+        "Atypical": "Y",
+        "Nonanginal": "N",
+        "Exertional CP": "N",
+        "LowTH Ang": "N",
+        "Q Wave": 0,
+        "St Elevation": 0,
+        "St Depression": 0,
+        "Tinversion": 1,
+        "LVH": "N",
+        "Poor R Progression": "N",
+        "BBB": "N",
+        "FBS": 183,
+        "CR": 1.1,
+        "TG": 358,
+        "LDL": 118,
+        "HDL": 32.0,
+        "BUN": 20,
+        "ESR": 18,
+        "HB": 14.3,
+        "K": 4.5,
+        "Na": 139,
+        "WBC": 8100,
+        "Lymph": 31,
+        "Neut": 65,
+        "PLT": 254,
+        "EF-TTE": 55,
+        "Region RWMA": 2,
+        "VHD": "mild",
+        "LAD": "Stenotic",
+        "LCX": "Normal",
+        "RCA": "Stenotic",
+        "Cath": "CAD"
+      },
+      "fhir_summary": {
+        "resourceType": "Patient",
+        "id": "CAD-EHR-005",
+        "condition": "Equivocal Cardiovascular Risk / Conformal Warning Badge",
+        "nyha_class": 2,
+        "ejection_fraction": 55.0,
+        "rwma_region": 2
+      }
+    }
+  ],
+  "feature_importances": {
+    "CAD": [
+      {
+        "feature": "Typical Chest Pain",
+        "importance": 1.5129609432439868
+      },
+      {
+        "feature": "Region RWMA",
+        "importance": 0.547687569803899
+      },
+      {
+        "feature": "EF-TTE",
+        "importance": 0.4371401610417077
+      },
+      {
+        "feature": "Age",
+        "importance": 0.43240911496524664
+      },
+      {
+        "feature": "TG",
+        "importance": 0.3576260401648413
+      },
+      {
+        "feature": "FBS",
+        "importance": 0.34567601039870494
+      },
+      {
+        "feature": "Tinversion",
+        "importance": 0.2748578143497893
+      },
+      {
+        "feature": "HTN",
+        "importance": 0.21624031188397846
+      },
+      {
+        "feature": "BMI",
+        "importance": 0.18504401841667104
+      },
+      {
+        "feature": "DM",
+        "importance": 0.18252531519490145
+      },
+      {
+        "feature": "K",
+        "importance": 0.14815308201879002
+      },
+      {
+        "feature": "BP",
+        "importance": 0.14682277888695636
+      },
+      {
+        "feature": "CR",
+        "importance": 0.14373147379474877
+      },
+      {
+        "feature": "ESR",
+        "importance": 0.13016397655665785
+      },
+      {
+        "feature": "Na",
+        "importance": 0.11192066655228688
+      }
+    ],
+    "LAD": [
+      {
+        "feature": "Typical Chest Pain",
+        "importance": 1.0205255433848133
+      },
+      {
+        "feature": "Region RWMA",
+        "importance": 0.6495270066975587
+      },
+      {
+        "feature": "EF-TTE",
+        "importance": 0.49783912102524597
+      },
+      {
+        "feature": "Age",
+        "importance": 0.36307138452693455
+      },
+      {
+        "feature": "ESR",
+        "importance": 0.21648247687160851
+      },
+      {
+        "feature": "WBC",
+        "importance": 0.15416707377551678
+      },
+      {
+        "feature": "Lymph",
+        "importance": 0.1523249983773856
+      },
+      {
+        "feature": "TG",
+        "importance": 0.14423884274300497
+      },
+      {
+        "feature": "FBS",
+        "importance": 0.13893532351208257
+      },
+      {
+        "feature": "LDL",
+        "importance": 0.12352824734338962
+      },
+      {
+        "feature": "Na",
+        "importance": 0.11708963278172263
+      },
+      {
+        "feature": "Length",
+        "importance": 0.11376929385183308
+      },
+      {
+        "feature": "HB",
+        "importance": 0.1076068585486118
+      },
+      {
+        "feature": "Tinversion",
+        "importance": 0.09660820960563134
+      },
+      {
+        "feature": "PR",
+        "importance": 0.09313412015282237
+      }
+    ],
+    "LCX": [
+      {
+        "feature": "Age",
+        "importance": 0.5323893249277979
+      },
+      {
+        "feature": "Typical Chest Pain",
+        "importance": 0.5156962301472207
+      },
+      {
+        "feature": "CR",
+        "importance": 0.3163186935250738
+      },
+      {
+        "feature": "TG",
+        "importance": 0.2945207942642105
+      },
+      {
+        "feature": "PLT",
+        "importance": 0.2533873809988194
+      },
+      {
+        "feature": "HDL",
+        "importance": 0.2064834493208794
+      },
+      {
+        "feature": "Na",
+        "importance": 0.20606734082642605
+      },
+      {
+        "feature": "FBS",
+        "importance": 0.17979931382093098
+      },
+      {
+        "feature": "Length",
+        "importance": 0.17368295209391452
+      },
+      {
+        "feature": "LDL",
+        "importance": 0.15839228435735594
+      },
+      {
+        "feature": "BMI",
+        "importance": 0.15537527516640057
+      },
+      {
+        "feature": "BUN",
+        "importance": 0.13087913863004838
+      },
+      {
+        "feature": "Weight",
+        "importance": 0.12849729492324327
+      },
+      {
+        "feature": "ESR",
+        "importance": 0.12232107677048062
+      },
+      {
+        "feature": "K",
+        "importance": 0.11399986472762269
+      }
+    ],
+    "RCA": [
+      {
+        "feature": "Typical Chest Pain",
+        "importance": 0.4862708918125259
+      },
+      {
+        "feature": "DM",
+        "importance": 0.43362500873652854
+      },
+      {
+        "feature": "ESR",
+        "importance": 0.42531171462238826
+      },
+      {
+        "feature": "Age",
+        "importance": 0.3372642778995834
+      },
+      {
+        "feature": "Neut",
+        "importance": 0.2800570849466016
+      },
+      {
+        "feature": "TG",
+        "importance": 0.1738399272654869
+      },
+      {
+        "feature": "WBC",
+        "importance": 0.1572809055966071
+      },
+      {
+        "feature": "Sex",
+        "importance": 0.14461822916368897
+      },
+      {
+        "feature": "Lymph",
+        "importance": 0.14367944060039756
+      },
+      {
+        "feature": "Weight",
+        "importance": 0.13520405555639423
+      },
+      {
+        "feature": "HB",
+        "importance": 0.12505462085324914
+      },
+      {
+        "feature": "PLT",
+        "importance": 0.11942993328802051
+      },
+      {
+        "feature": "BMI",
+        "importance": 0.11533956990245171
+      },
+      {
+        "feature": "PR",
+        "importance": 0.10032661053628394
+      },
+      {
+        "feature": "LDL",
+        "importance": 0.09567495805254776
+      }
+    ]
+  },
+  "feature_names": [
+    "Age",
+    "Weight",
+    "Length",
+    "Sex",
+    "BMI",
+    "DM",
+    "HTN",
+    "Current Smoker",
+    "EX-Smoker",
+    "FH",
+    "Obesity",
+    "CRF",
+    "CVA",
+    "Airway disease",
+    "Thyroid Disease",
+    "CHF",
+    "DLP",
+    "BP",
+    "PR",
+    "Edema",
+    "Weak Peripheral Pulse",
+    "Lung rales",
+    "Systolic Murmur",
+    "Diastolic Murmur",
+    "Typical Chest Pain",
+    "Dyspnea",
+    "Function Class",
+    "Atypical",
+    "Nonanginal",
+    "Exertional CP",
+    "LowTH Ang",
+    "Q Wave",
+    "St Elevation",
+    "St Depression",
+    "Tinversion",
+    "LVH",
+    "Poor R Progression",
+    "BBB",
+    "FBS",
+    "CR",
+    "TG",
+    "LDL",
+    "HDL",
+    "BUN",
+    "ESR",
+    "HB",
+    "K",
+    "Na",
+    "WBC",
+    "Lymph",
+    "Neut",
+    "PLT",
+    "EF-TTE",
+    "Region RWMA",
+    "VHD"
+  ],
+  "feature_metadata": {
+    "Age": {
+      "type": "numeric",
+      "min": 30.0,
+      "max": 86.0,
+      "mean": 58.897689768976896,
+      "default": 58.0,
+      "modifiable": false
+    },
+    "Weight": {
+      "type": "numeric",
+      "min": 48.0,
+      "max": 120.0,
+      "mean": 73.83168316831683,
+      "default": 74.0,
+      "modifiable": true
+    },
+    "Length": {
+      "type": "numeric",
+      "min": 140.0,
+      "max": 188.0,
+      "mean": 164.7161716171617,
+      "default": 165.0,
+      "modifiable": false
+    },
+    "Sex": {
+      "type": "binary",
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.5808580858085809,
+      "default": 1.0,
+      "modifiable": false
+    },
+    "BMI": {
+      "type": "numeric",
+      "min": 18.115412710007302,
+      "max": 40.90065778377467,
+      "mean": 27.248338858149047,
+      "default": 26.775510204081634,
+      "modifiable": true
+    },
+    "DM": {
+      "type": "binary",
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.297029702970297,
+      "default": 0.0,
+      "modifiable": false
+    },
+    "HTN": {
+      "type": "binary",
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.5907590759075908,
+      "default": 1.0,
+      "modifiable": false
+    },
+    "Current Smoker": {
+      "type": "binary",
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.2079207920792079,
+      "default": 0.0,
+      "modifiable": true
+    },
+    "EX-Smoker": {
+      "type": "binary",
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.033003300330033,
+      "default": 0.0,
+      "modifiable": false
+    },
+    "FH": {
+      "type": "binary",
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.15841584158415842,
+      "default": 0.0,
+      "modifiable": false
+    },
+    "Obesity": {
+      "type": "categorical",
+      "min": 0.0,
+      "max": 0.0,
+      "mean": 0.0,
+      "default": 0.0,
+      "modifiable": false
+    },
+    "CRF": {
+      "type": "categorical",
+      "min": 0.0,
+      "max": 0.0,
+      "mean": 0.0,
+      "default": 0.0,
+      "modifiable": false
+    },
+    "CVA": {
+      "type": "categorical",
+      "min": 0.0,
+      "max": 0.0,
+      "mean": 0.0,
+      "default": 0.0,
+      "modifiable": false
+    },
+    "Airway disease": {
+      "type": "categorical",
+      "min": 0.0,
+      "max": 0.0,
+      "mean": 0.0,
+      "default": 0.0,
+      "modifiable": false
+    },
+    "Thyroid Disease": {
+      "type": "categorical",
+      "min": 0.0,
+      "max": 0.0,
+      "mean": 0.0,
+      "default": 0.0,
+      "modifiable": false
+    },
+    "CHF": {
+      "type": "categorical",
+      "min": 0.0,
+      "max": 0.0,
+      "mean": 0.0,
+      "default": 0.0,
+      "modifiable": false
+    },
+    "DLP": {
+      "type": "categorical",
+      "min": 0.0,
+      "max": 0.0,
+      "mean": 0.0,
+      "default": 0.0,
+      "modifiable": false
+    },
+    "BP": {
+      "type": "numeric",
+      "min": 90.0,
+      "max": 190.0,
+      "mean": 129.55445544554456,
+      "default": 130.0,
+      "modifiable": true
+    },
+    "PR": {
+      "type": "numeric",
+      "min": 50.0,
+      "max": 110.0,
+      "mean": 75.14191419141915,
+      "default": 70.0,
+      "modifiable": true
+    },
+    "Edema": {
+      "type": "binary",
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.039603960396039604,
+      "default": 0.0,
+      "modifiable": false
+    },
+    "Weak Peripheral Pulse": {
+      "type": "categorical",
+      "min": 0.0,
+      "max": 0.0,
+      "mean": 0.0,
+      "default": 0.0,
+      "modifiable": false
+    },
+    "Lung rales": {
+      "type": "categorical",
+      "min": 0.0,
+      "max": 0.0,
+      "mean": 0.0,
+      "default": 0.0,
+      "modifiable": false
+    },
+    "Systolic Murmur": {
+      "type": "categorical",
+      "min": 0.0,
+      "max": 0.0,
+      "mean": 0.0,
+      "default": 0.0,
+      "modifiable": false
+    },
+    "Diastolic Murmur": {
+      "type": "categorical",
+      "min": 0.0,
+      "max": 0.0,
+      "mean": 0.0,
+      "default": 0.0,
+      "modifiable": false
+    },
+    "Typical Chest Pain": {
+      "type": "binary",
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.5412541254125413,
+      "default": 1.0,
+      "modifiable": false
+    },
+    "Dyspnea": {
+      "type": "categorical",
+      "min": 0.0,
+      "max": 0.0,
+      "mean": 0.0,
+      "default": 0.0,
+      "modifiable": false
+    },
+    "Function Class": {
+      "type": "categorical",
+      "min": 0.0,
+      "max": 3.0,
+      "mean": 0.6633663366336634,
+      "default": 0.0,
+      "modifiable": false
+    },
+    "Atypical": {
+      "type": "categorical",
+      "min": 0.0,
+      "max": 0.0,
+      "mean": 0.0,
+      "default": 0.0,
+      "modifiable": false
+    },
+    "Nonanginal": {
+      "type": "categorical",
+      "min": 0.0,
+      "max": 0.0,
+      "mean": 0.0,
+      "default": 0.0,
+      "modifiable": false
+    },
+    "Exertional CP": {
+      "type": "categorical",
+      "min": 0.0,
+      "max": 0.0,
+      "mean": 0.0,
+      "default": 0.0,
+      "modifiable": false
+    },
+    "LowTH Ang": {
+      "type": "categorical",
+      "min": 0.0,
+      "max": 0.0,
+      "mean": 0.0,
+      "default": 0.0,
+      "modifiable": false
+    },
+    "Q Wave": {
+      "type": "binary",
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.052805280528052806,
+      "default": 0.0,
+      "modifiable": false
+    },
+    "St Elevation": {
+      "type": "binary",
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.0462046204620462,
+      "default": 0.0,
+      "modifiable": false
+    },
+    "St Depression": {
+      "type": "binary",
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.23432343234323433,
+      "default": 0.0,
+      "modifiable": false
+    },
+    "Tinversion": {
+      "type": "binary",
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.297029702970297,
+      "default": 0.0,
+      "modifiable": false
+    },
+    "LVH": {
+      "type": "categorical",
+      "min": 0.0,
+      "max": 0.0,
+      "mean": 0.0,
+      "default": 0.0,
+      "modifiable": false
+    },
+    "Poor R Progression": {
+      "type": "categorical",
+      "min": 0.0,
+      "max": 0.0,
+      "mean": 0.0,
+      "default": 0.0,
+      "modifiable": false
+    },
+    "BBB": {
+      "type": "categorical",
+      "min": 0.0,
+      "max": 2.0,
+      "mean": 0.09570957095709572,
+      "default": 0.0,
+      "modifiable": false
+    },
+    "FBS": {
+      "type": "numeric",
+      "min": 62.0,
+      "max": 400.0,
+      "mean": 119.18481848184818,
+      "default": 98.0,
+      "modifiable": true
+    },
+    "CR": {
+      "type": "numeric",
+      "min": 0.5,
+      "max": 2.2,
+      "mean": 1.0556105610561057,
+      "default": 1.0,
+      "modifiable": false
+    },
+    "TG": {
+      "type": "numeric",
+      "min": 37.0,
+      "max": 1050.0,
+      "mean": 150.34323432343234,
+      "default": 122.0,
+      "modifiable": true
+    },
+    "LDL": {
+      "type": "numeric",
+      "min": 18.0,
+      "max": 232.0,
+      "mean": 104.64356435643565,
+      "default": 100.0,
+      "modifiable": true
+    },
+    "HDL": {
+      "type": "numeric",
+      "min": 15.9,
+      "max": 111.0,
+      "mean": 40.23399339933993,
+      "default": 39.0,
+      "modifiable": true
+    },
+    "BUN": {
+      "type": "numeric",
+      "min": 6.0,
+      "max": 52.0,
+      "mean": 17.501650165016503,
+      "default": 16.0,
+      "modifiable": false
+    },
+    "ESR": {
+      "type": "numeric",
+      "min": 1.0,
+      "max": 90.0,
+      "mean": 19.462046204620464,
+      "default": 15.0,
+      "modifiable": false
+    },
+    "HB": {
+      "type": "numeric",
+      "min": 8.9,
+      "max": 17.6,
+      "mean": 13.153465346534654,
+      "default": 13.2,
+      "modifiable": false
+    },
+    "K": {
+      "type": "numeric",
+      "min": 3.0,
+      "max": 6.6,
+      "mean": 4.230693069306931,
+      "default": 4.2,
+      "modifiable": false
+    },
+    "Na": {
+      "type": "numeric",
+      "min": 128.0,
+      "max": 156.0,
+      "mean": 140.996699669967,
+      "default": 141.0,
+      "modifiable": false
+    },
+    "WBC": {
+      "type": "numeric",
+      "min": 3700.0,
+      "max": 18000.0,
+      "mean": 7562.046204620462,
+      "default": 7100.0,
+      "modifiable": false
+    },
+    "Lymph": {
+      "type": "numeric",
+      "min": 7.0,
+      "max": 60.0,
+      "mean": 32.399339933993396,
+      "default": 32.0,
+      "modifiable": false
+    },
+    "Neut": {
+      "type": "numeric",
+      "min": 32.0,
+      "max": 89.0,
+      "mean": 60.148514851485146,
+      "default": 60.0,
+      "modifiable": false
+    },
+    "PLT": {
+      "type": "numeric",
+      "min": 25.0,
+      "max": 742.0,
+      "mean": 221.4884488448845,
+      "default": 210.0,
+      "modifiable": false
+    },
+    "EF-TTE": {
+      "type": "numeric",
+      "min": 15.0,
+      "max": 60.0,
+      "mean": 47.23102310231023,
+      "default": 50.0,
+      "modifiable": false
+    },
+    "Region RWMA": {
+      "type": "numeric",
+      "min": 0.0,
+      "max": 4.0,
+      "mean": 0.6204620462046204,
+      "default": 0.0,
+      "modifiable": false
+    },
+    "VHD": {
+      "type": "categorical",
+      "min": 0.0,
+      "max": 3.0,
+      "mean": 0.7788778877887789,
+      "default": 1.0,
+      "modifiable": false
+    }
+  }
+}

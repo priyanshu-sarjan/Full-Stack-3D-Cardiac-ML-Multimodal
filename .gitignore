@@ -1,0 +1,31 @@
+# Dependencies
+node_modules
+frontend/node_modules
+backend_venv
+.venv
+env/
+venv/
+
+# Production build outputs
+frontend/dist
+dist
+build
+
+# Python cache & artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache
+
+# Temporary downloads
+dataset_411.zip
+
+# Vercel & IDE
+.vercel
+.vscode
+.idea
+.DS_Store
+Thumbs.db
+*.local
+.env
