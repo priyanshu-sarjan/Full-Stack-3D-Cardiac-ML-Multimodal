@@ -447,3 +447,161 @@ button {
   min-width: 220px;
   transition: opacity 0.15s ease;
 }
+
+/* Warm Rose/Salmon Canvas Background matching mockup */
+.mockup-outer-canvas {
+  background-color: #ea7272;
+  background-image: radial-gradient(circle at 50% 15%, #f48787 0%, #ea7272 55%, #d95e5e 100%);
+  min-height: 100vh;
+  padding: 1rem;
+}
+@media (min-width: 768px) {
+  .mockup-outer-canvas {
+    padding: 2rem 3rem;
+  }
+}
+
+/* Deep Wine/Crimson Luxury Rounded Card Container */
+.mockup-card-container {
+  background: radial-gradient(circle at 62% 40%, #7c1c2c 0%, #5a1320 52%, #3d0c15 100%);
+  border-radius: 36px;
+  box-shadow: 0 35px 85px -15px rgba(50, 7, 15, 0.65), 0 0 0 1px rgba(255, 185, 195, 0.15);
+  color: #ffffff;
+  overflow: hidden;
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+@media (min-width: 1024px) {
+  .mockup-card-container {
+    border-radius: 44px;
+  }
+}
+
+/* Frosted Blush CTA Pill Button */
+.pill-btn-pink {
+  background: #edd2d6;
+  color: #4a0f19;
+  font-weight: 700;
+  font-family: var(--font-heading);
+  padding: 0.9rem 2.2rem;
+  border-radius: 9999px;
+  font-size: 1.05rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  border: none;
+}
+.pill-btn-pink:hover {
+  background: #f8e5e8;
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 14px 30px -4px rgba(0, 0, 0, 0.4), 0 0 20px rgba(237, 210, 214, 0.4);
+  color: #380a12;
+}
+
+.pill-btn-outline {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+  font-weight: 600;
+  font-family: var(--font-heading);
+  padding: 0.9rem 1.6rem;
+  border-radius: 9999px;
+  font-size: 0.95rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  backdrop-filter: blur(12px);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.pill-btn-outline:hover {
+  background: rgba(255, 255, 255, 0.18);
+  border-color: rgba(255, 255, 255, 0.45);
+  transform: translateY(-2px);
+}
+
+/* Frosted Glass Floating Callouts */
+.frosted-glass-badge {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  box-shadow: 0 16px 36px -8px rgba(0, 0, 0, 0.35);
+}
+
+/* Mockup Top Navigation */
+.mockup-nav-link {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+.mockup-nav-link:hover {
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Hero Headline matching mockup */
+.mockup-hero-title {
+  font-family: var(--font-heading);
+  font-weight: 900;
+  font-size: clamp(2.2rem, 4vw, 3.6rem);
+  line-height: 1.08;
+  letter-spacing: -0.015em;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.mockup-hero-sub {
+  color: rgba(255, 225, 230, 0.88);
+  font-size: clamp(0.95rem, 1.25vw, 1.1rem);
+  line-height: 1.6;
+  max-width: 460px;
+}
+
+/* Bullet List in Hero */
+.mockup-bullet-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.95rem;
+  color: rgba(255, 240, 243, 0.95);
+  font-weight: 500;
+}
+.mockup-bullet-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 9999px;
+  background: #edd2d6;
+  box-shadow: 0 0 8px rgba(237, 210, 214, 0.8);
+  flex-shrink: 0;
+}
+
+/* Bottom 3-column stats bar */
+.mockup-stats-bar {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 2.2rem 3rem;
+}
+.mockup-stat-title {
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.01em;
+}
+.mockup-stat-desc {
+  color: rgba(255, 230, 235, 0.85);
+  font-size: 0.85rem;
+  margin-top: 0.35rem;
+}

@@ -99,17 +99,20 @@ Full-Stack-3D-Cardiac-ML-Multimodal/
 │       └── feature_importances.json
 ├── data/                           # UCI Z-Alizadeh Sani Dataset #411
 │   └── extention of Z-Alizadeh sani dataset.xlsx
-├── frontend/                       # React 19 + Vite + Three.js + Tailwind CSS
+├── frontend/                       # React 19 + Vite + Three.js / R3F
 │   ├── index.html
 │   ├── package.json
 │   ├── vite.config.js
 │   ├── vercel.json                 # Vercel SPA routing configuration
+│   ├── public/
+│   │   └── models/
+│   │       └── heart.glb           # High-resolution anatomical 3D human heart
 │   └── src/
-│       ├── App.jsx                 # Master application controller
-│       ├── index.css               # Design system & tokens
+│       ├── App.jsx                 # Luxury Crimson/Wine UI & master application controller
+│       ├── index.css               # Design system, glassmorphic tokens & leader lines
 │       ├── components/
-│       │   ├── HeartCanvas.jsx     # Three.js 3D WebGL viewport & camera controls
-│       │   ├── Heart3DModel.jsx    # Segmented myocardium & Echo RWMA animation
+│       │   ├── HeartCanvas.jsx     # Three.js 3D WebGL viewport, leader lines & floating badges
+│       │   ├── Heart3DModel.jsx    # Real 3D heart pumping, ventricular torsion & Echo RWMA
 │       │   ├── CoronaryVessels.jsx # LAD, LCX, RCA tube branches with pulse shaders
 │       │   ├── CoronaryPulseShader.js # Custom GLSL flow velocity & narrowing shader
 │       │   ├── ThoraxContext.jsx   # Layer 1 holographic ribcage & sternum
