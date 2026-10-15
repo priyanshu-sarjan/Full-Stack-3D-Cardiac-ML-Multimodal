@@ -6,7 +6,7 @@ import { Heart3DModel } from './Heart3DModel';
 import { CoronaryVessels } from './CoronaryVessels';
 import { ThoraxContext } from './ThoraxContext';
 import { LumenCrossSection } from './LumenCrossSection';
-import { Eye, Layers, Camera, Heart, Zap, Sparkles, AlertCircle } from 'lucide-react';
+import { Eye, Layers, Camera, Heart, Zap, Sparkles, AlertCircle, Activity } from 'lucide-react';
 
 // Camera controller helper
 function CameraController({ targetPosition, targetLookAt }) {

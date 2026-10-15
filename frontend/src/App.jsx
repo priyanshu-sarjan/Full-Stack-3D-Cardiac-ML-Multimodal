@@ -23,6 +23,41 @@ import {
 
 import { getCardioData, clientPredict, clientCounterfactual, clientGenerateCopilot } from './utils/cardioEngine';
 
+class CanvasErrorBoundary extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { hasError: false };
+  }
+  static getDerivedStateFromError() {
+    return { hasError: true };
+  }
+  componentDidCatch(error, errorInfo) {
+    console.warn('Canvas Error Boundary caught an issue:', error, errorInfo);
+  }
+  render() {
+    if (this.state.hasError) {
+      return (
+        <div className="w-full h-[540px] rounded-2xl glass-panel flex flex-col items-center justify-center p-6 text-center border border-cyan-500/30">
+          <div className="w-12 h-12 rounded-xl bg-cyan-500/20 flex items-center justify-center text-cyan-300 mb-3">
+            <Heart size={24} className="text-cyan-400" />
+          </div>
+          <h3 className="font-heading font-bold text-base text-cyan-300">3D Simulation Fallback View</h3>
+          <p className="text-xs text-gray-400 max-w-md mt-1 mb-4 leading-relaxed">
+            WebGL acceleration is initializing or constrained on this browser. All multi-vessel risk predictions, SHAP feature attributions, and What-If counterfactuals remain fully active.
+          </p>
+          <button
+            onClick={() => this.setState({ hasError: false })}
+            className="btn-action text-xs font-semibold py-1.5 px-3"
+          >
+            Retry 3D WebGL
+          </button>
+        </div>
+      );
+    }
+    return this.props.children;
+  }
+}
+
 export default function App() {
   const API_BASE = import.meta.env.VITE_API_URL || '';
   
@@ -272,14 +307,16 @@ export default function App() {
           {/* Left Column: Interactive 3D Heart Simulation & Peeling (7 Cols) */}
           <div className="lg:col-span-7 space-y-4">
             <div className="h-[540px] w-full">
-              <HeartCanvas
-                predictions={activePredictions}
-                selectedVessel={selectedVessel}
-                onSelectVessel={setSelectedVessel}
-                heartRate={heartRate}
-                onHeartRateChange={setHeartRate}
-                canvasRef={canvasRef}
-              />
+              <CanvasErrorBoundary>
+                <HeartCanvas
+                  predictions={activePredictions}
+                  selectedVessel={selectedVessel}
+                  onSelectVessel={setSelectedVessel}
+                  heartRate={heartRate}
+                  onHeartRateChange={setHeartRate}
+                  canvasRef={canvasRef}
+                />
+              </CanvasErrorBoundary>
             </div>
 
             {/* 3D Instructions & Innovation Callout */}
